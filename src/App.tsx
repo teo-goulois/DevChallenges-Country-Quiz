@@ -64,7 +64,7 @@ function App() {
   return (
     <div
       style={{ backgroundImage: `url(${backgroundImage})` }}
-      className="bg-red h-screen w-screen bg-cover bg-center flex flex-col items-center justify-center font-[Poppins]"
+      className="h-screen w-screen bg-cover bg-center flex flex-col items-center justify-center font-[Poppins]"
     >
       {/* container */}
       <div className="relative bg-white rounded-3xl px-4 py-10 min-w-[50%] w-[95%] md:w-[60%]">
