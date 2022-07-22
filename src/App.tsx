@@ -23,7 +23,7 @@ import NextButton from "./components/NextButton";
 import QuestionTitle from "./components/QuestionTitle";
 
 function App() {
-  const { allQuizQuestions, loading } = useContext(QuizContext);
+  const { allQuizQuestions } = useContext(QuizContext);
   const [state, send] = useMachine(quizMachine);
   const [QIsCapital, setQIsCapital] = useState<boolean>();
 
@@ -67,7 +67,7 @@ function App() {
       className="h-screen w-screen bg-cover bg-center flex flex-col items-center justify-center font-[Poppins]"
     >
       {/* container */}
-      <div className="relative bg-white rounded-3xl px-4 py-10 min-w-[50%] w-[95%] md:w-[60%]">
+      <div className="relative bg-white rounded-3xl px-4 py-10  w-[95%] md:w-[60%] max-w-[500px] ">
         {/* Country Quiz title */}
         <h1 className="text-light-gray text-2xl md:text-4xl font-bold text-left uppercase absolute  top-[-35px] md:top-[-45px] left-0">
           country quiz
