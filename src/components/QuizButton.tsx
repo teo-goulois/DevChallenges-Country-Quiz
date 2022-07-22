@@ -1,0 +1,45 @@
+import React, { useState } from "react";
+// Types
+import { QuizType } from "../types/Types";
+
+type Props = {
+  item: QuizType;
+  index: number;
+  questionIsSuccess: (isSuccess: boolean) => void;
+  showError: boolean;
+};
+const QuizButton = ({ item, index, questionIsSuccess, showError }: Props) => {
+  console.log(item.good === true && item.name.common);
+
+  const [isGood, setIsGood] = useState<boolean | undefined>(undefined);
+  const handleClick = () => {
+    if (item.good === true) {
+      setIsGood(true);
+      setTimeout(() => {
+        questionIsSuccess(true);
+      }, 1000);
+    } else {
+      setIsGood(false);
+      questionIsSuccess(false);
+    }
+  };
+  return (
+    <button
+      disabled={showError || isGood }
+      onClick={handleClick}
+      className={` w-full ${
+        !showError && "hover:bg-yellow hover:border-yellow quiz-button"
+      }  flex items-center font-[Poppins] text-primary border rounded-xl px-2 py-1 my-4 ${
+        isGood && "!bg-green !border-green !text-white"
+      } ${isGood === false && "bg-red border-red !text-white"}
+      ${showError && item.good === true && "bg-green border-green !text-white"}`}
+    >
+      <p className="uppercase text-2xl font-medium mr-4 text-left">
+        {index === 0 ? "A" : index === 1 ? "B" : index === 2 ? "C" : "D"}
+      </p>
+      <p className="font-medium text-lg">{item.name.common}</p>
+    </button>
+  );
+};
+
+export default QuizButton;
