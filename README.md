@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://dev-challenges-country-quiz-cjoa670o0-teo-goulois.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://dev-challenges-country-quiz-cjoa670o0-teo-goulois.vercel.app/">
       Solution
     </a>
     <span> | </span>
@@ -37,7 +37,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](./Capture.PNG)
 
 
 ### Built With
@@ -45,8 +45,9 @@
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
+- [TypeScript ](https://www.typescriptlang.org/)
 - [Tailwind](https://tailwindcss.com/)
+- [XState](https://xstate.js.org/docs/)
 
 ## Features
 
@@ -62,7 +63,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/teo-goulois/DevChallenges-Country-Quiz
 
 # Install dependencies
 $ npm install
@@ -81,6 +82,6 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [teo-goulois.com](https://teogoulois-website.vercel.app/)
+- GitHub [@teo-goulois](https://github.com/teo-goulois)
+
