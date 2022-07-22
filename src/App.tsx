@@ -72,8 +72,6 @@ function App() {
         <h1 className="text-light-gray text-2xl md:text-4xl font-bold text-left uppercase absolute  top-[-35px] md:top-[-45px] left-0">
           country quiz
         </h1>
-        {/* if loading */}
-        {loading && <p>Loading...</p>}
         {/* if datas */}
         {state.matches("Datas Loaded") || state.matches("show error") ? (
           /* data loaded */

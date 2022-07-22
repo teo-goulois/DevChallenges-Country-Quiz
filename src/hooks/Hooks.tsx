@@ -4,7 +4,6 @@ export const getQuestions = (
   allQuizQuestions: QuizType[],
   setQIsCapital: React.Dispatch<React.SetStateAction<boolean | undefined>>
 ) => {
-  console.log("getQuestions");
   // design if its Capital or Flag
   if (Math.random() < 0.5) {
     setQIsCapital(true);
@@ -24,7 +23,5 @@ export const getQuestions = (
     }
     return question;
   });
-  console.log(newQuestions);
-
   return newQuestions;
 };

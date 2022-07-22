@@ -10,15 +10,13 @@ type Props = {
   showError: boolean;
 };
 const QuizButton = ({ item, index, questionIsSuccess, showError }: Props) => {
-  console.log(item.good === true && item.name.common);
-
   const [isGood, setIsGood] = useState<boolean | undefined>(undefined);
   const handleClick = () => {
     if (item.good === true) {
       setIsGood(true);
       setTimeout(() => {
         questionIsSuccess(true);
-      }, 1000);
+      }, 750);
     } else {
       setIsGood(false);
       questionIsSuccess(false);
@@ -40,7 +38,7 @@ const QuizButton = ({ item, index, questionIsSuccess, showError }: Props) => {
       </p>
       <p className="font-medium text-lg">{item.name.common}</p>
       {
-        showError &&  item.good === true ? <SuccessIcon className="ml-auto" fill="#FFFFFF"  /> : <ErrorIcon stroke="#FFFFFF" className="ml-auto"  />
+        showError && ( item.good === true ? <SuccessIcon className="ml-auto" fill="#FFFFFF"  /> : <ErrorIcon stroke="#FFFFFF" className="ml-auto"  />)
         
       }
     </button>
