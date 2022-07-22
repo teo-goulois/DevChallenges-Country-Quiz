@@ -109,7 +109,7 @@ function App() {
               src={winningImage}
               alt="winning"
             />
-            <div className="text-center">
+            <div className="text-center mb-2">
               <h2 className="font-bold text-dark-blue text-5xl mb-4">
                 Results
               </h2>
@@ -140,6 +140,10 @@ function App() {
           <NextButton nextFunction={nextFunction} />
         )}
       </div>
+      <p className="absolute bottom-10 text-light-gray text-sm font-medium ">
+        created by <span className="font-bold underline">téo goulois</span> -
+        devChallenges.io
+      </p>
     </div>
   );
 }

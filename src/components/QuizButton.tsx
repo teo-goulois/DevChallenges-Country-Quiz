@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ErrorIcon, SuccessIcon } from "../assets/icons/Icons";
 // Types
 import { QuizType } from "../types/Types";
 
@@ -38,6 +39,10 @@ const QuizButton = ({ item, index, questionIsSuccess, showError }: Props) => {
         {index === 0 ? "A" : index === 1 ? "B" : index === 2 ? "C" : "D"}
       </p>
       <p className="font-medium text-lg">{item.name.common}</p>
+      {
+        showError &&  item.good === true ? <SuccessIcon className="ml-auto" fill="#FFFFFF"  /> : <ErrorIcon stroke="#FFFFFF" className="ml-auto"  />
+        
+      }
     </button>
   );
 };
